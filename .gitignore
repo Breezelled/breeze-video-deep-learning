@@ -1,5 +1,8 @@
 # dataset
 /sentiment_analysis/aclImdb
+.tar.gz
+.tar
+.gz
 # model
 /sentiment_analysis/imdb_bert*
 

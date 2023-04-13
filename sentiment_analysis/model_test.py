@@ -1,10 +1,9 @@
 import tensorflow as tf
-import tensorflow_hub as hub
 import tensorflow_text as text
 from const import BERT_EN_WWM_CASED_URL, BERT_EN_CASED_PREPROCESS_URL
-from sentiment_analysis_model_train import build_classifier_model
+from build_model import build_classifier_model
 
-reloaded_model = tf.saved_model.load("imdb_bert_wwm_batch12_r3e-5_epoch2")
+reloaded_model = tf.saved_model.load("imdb_bert_wwm_batch12_lr3e-5_epoch2")
 
 tfhub_handle__encoder = BERT_EN_WWM_CASED_URL
 tfhub_handle_preprocess = BERT_EN_CASED_PREPROCESS_URL
