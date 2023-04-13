@@ -1,0 +1,7 @@
+# dataset
+/sentiment_analysis/aclImdb
+# model
+/sentiment_analysis/imdb_bert*
+
+*.whl
+.idea
