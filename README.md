@@ -25,3 +25,4 @@ and it can provide visualized data analysis for administrators.
 - [TensorFlow Hub](https://tfhub.dev)
 - [TensorFlow Official Models](https://github.com/tensorflow/models)
 - [TensorFlow Metal (if is mac user)](https://developer.apple.com/metal/tensorflow-plugin/)
+- [EasyRec](https://github.com/alibaba/EasyRec)
