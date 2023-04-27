@@ -4,7 +4,8 @@ import shutil
 import tensorflow as tf
 import tensorflow_hub as hub
 import tensorflow_text as text
-from const import BERT_EN_WWM_CASED_URL, BERT_EN_CASED_PREPROCESS_URL, DATASET
+from const import BERT_EN_WWM_CASED_URL, BERT_EN_CASED_PREPROCESS_URL, DATASET, BACKUP_BERT_EN_CASED_PREPROCESS_URL, \
+    BACKUP_BERT_EN_WWM_CASED_URL
 
 # download dataset
 url = DATASET
@@ -103,3 +104,10 @@ def build_classifier_model():
     net = tf.keras.layers.Dropout(0.1)(net)
     net = tf.keras.layers.Dense(1, activation=None, name='classifier')(net)
     return tf.keras.Model(text_input, net)
+
+# print("Tensorflow Version:", tf.__version__)
+# print("Tensorflow Hub Version:", hub.__version__)
+# print("Tensorflow Text Version:", text.__version__)
+#
+# bert_model = build_classifier_model()
+# print(bert_model.summary())
